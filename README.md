@@ -19,3 +19,13 @@ In Kafka 0.8.0:
 * Require the producer, the consumer, and the consumer group files
 
 * Use them! To test the consumer group, you can for example start two (or up to four) `MyConsumerGroup` instances, and check that a) messages are balanced between the instances, and b) each partition is consumed always by the same consumer instance.
+```ruby
+      consumer = MyConsumer.new(0)
+      consumer.run
+
+      group = MyConsumerGroup.new
+      group.run
+
+      producer = MyProducer.new
+      producer.send_message('hola Madrid.rb')
+```
