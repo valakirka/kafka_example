@@ -1,0 +1,28 @@
+GIT
+  remote: git://github.com/bsm/poseidon_cluster.git
+  revision: 09241015f293bc6056e45af523dd2dce43643d21
+  specs:
+    poseidon_cluster (0.3.0)
+      poseidon (>= 0.0.5.pre1)
+      zk
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    little-plugger (1.1.3)
+    logging (1.8.2)
+      little-plugger (>= 1.1.3)
+      multi_json (>= 1.8.4)
+    multi_json (1.10.1)
+    poseidon (0.0.5)
+    zk (1.9.4)
+      logging (~> 1.8.2)
+      zookeeper (~> 1.4.0)
+    zookeeper (1.4.9)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  poseidon
+  poseidon_cluster!
